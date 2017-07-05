@@ -3,9 +3,9 @@
 	"version": "1.0.0",
 	"description": "JavaScript development environment Pluralsight course by Cory House",
 	"scripts": {
-		"prestart": "node build_scripts/start_message.js",
+		"prestart": "babel-node build_scripts/start_message.js",
 		"start": "npm-run-all --parallel security-check open-src",
-		"open-src": "node build_scripts/source_server.js",
+		"open-src": "babel-node build_scripts/source_server.js",
 		"security-check": "nsp check"
 	},
 	"author": "Cory House",
